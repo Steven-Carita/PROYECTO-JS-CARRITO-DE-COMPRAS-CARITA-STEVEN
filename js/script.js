@@ -58,7 +58,7 @@ function sacar(producto, miCarrito, cantidad) {
 function llenarCarrito(listaProductos, miCarrito) {
     let compra = true;
     while (compra) {
-        let opcion = prompt("Opciones 1-3 y x para terminar pedido\nLos productos son:\n" + listaProductos[0].nombre + ": " + "$" + listaProductos[0].precio + "\n" + listaProductos[1].nombre + ": " + "$" + listaProductos[1].precio + "\n" + listaProductos[2].nombre + ": " + "$" + listaProductos[2].precio + "\n" + showCarrito(miCarrito));
+        let opcion = prompt("Opciones 1-3 y x para terminar pedido\nLos productos son:\n" + "1- " + listaProductos[0].nombre + ": " + "$" + listaProductos[0].precio + "\n" + "2- " + listaProductos[1].nombre + ": " + "$" + listaProductos[1].precio + "\n" + "3- " + listaProductos[2].nombre + ": " + "$" + listaProductos[2].precio + "\n" + showCarrito(miCarrito));
         switch (opcion) {
             case "1":
                 agregar(listaProductos[0], miCarrito, valiCant());
